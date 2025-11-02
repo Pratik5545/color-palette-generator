@@ -1,0 +1,100 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAYA GRADIENT BACKGROUND */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  /* Halka, modern gradient */
+  background: linear-gradient(to right top, #f3e7e9, #e3eeff);
+  min-height: 100vh; /* Poori screen height lega */
+  color: #111;
+  
+  /* Center the card vertically */
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+/* NAYA "GLASSMORPHISM" CARD EFFECT */
+.App {
+  max-width: 1000px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  text-align: center;
+  
+  /* Card ka look */
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px); /* Peeche ka background blur karega */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem; /* Margin kam kiya */
+  color: #2c3e50;
+}
+
+/* NAYA SUBTITLE STYLE */
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+/* NAYA "ADVANCED" BUTTON STYLE */
+.generate-btn {
+  /* Gradient background */
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  
+  /* Pill shape */
+  border-radius: 50px; 
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+  /* Smooth transition */
+  transition: all 0.3s ease; 
+  
+  /* Modern shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  /* Icon aur text ko align kerne ke liye */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Icon aur text ke beech space */
+}
+
+/* NAYA BUTTON HOVER EFFECT */
+.generate-btn:hover {
+  /* Button upar uthega aur shadow badhega */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(42, 113, 252, 0.4);
+}
+
+.generate-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Palette container mein space badhaya */
+.palette-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem; /* Pehle se zyaada gap */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

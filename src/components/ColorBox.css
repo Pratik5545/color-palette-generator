@@ -1,0 +1,53 @@
+/* NAYA COLOR BOX STYLE */
+.color-box {
+  height: 200px;
+  border-radius: 16px; /* Zyaada rounded corners */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+  /* Smooth transition */
+  transition: all 0.3s ease;
+  
+  /* Halka shadow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  
+  /* Ek halki white border (dark colors par acchi dikhegi) */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* NAYA HOVER EFFECT */
+.color-box:hover {
+  /* Hover per box thoda upar aur bada hoga */
+  transform: scale(1.03) translateY(-5px);
+  
+  /* Shadow badhega */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+/* NAYA INFO BOX (DARK BACKGROUND) */
+.color-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  /* Dark background, taaki text har color par dikhe */
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  /* Halka blur effect */
+  backdrop-filter: blur(5px);
+  padding: 0.75rem;
+  text-align: center;
+  user-select: none;
+  
+  /* Isse text select nahi hoga */
+}
+
+/* NAYA TEXT STYLE */
+.color-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff; /* White text for better contrast */
+}
